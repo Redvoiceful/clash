@@ -1,0 +1,666 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+img, audio, video {
+  max-width: 100%;
+  height: auto;
+}
+
+audio, canvas, iframe, video, img, svg {
+  vertical-align: middle;
+}
+
+iframe {
+  border: 0;
+}
+
+textarea {
+  resize: none;
+  /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+input, textarea, select, button {
+  outline: none;
+  border: none;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+  text-align: left;
+}
+
+html {
+  line-height: 1.4;
+  font-size: 18px;
+  color: #101010;
+  height: 100%;
+}
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+input,
+textarea,
+select,
+button {
+  border: 1px solid #DCDFE6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer,
+section,
+.section {
+  position: relative;
+  padding: 40px 0;
+}
+@media screen and (max-width: 1280px) {
+  footer,
+section,
+.section {
+    padding: 36px 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  footer,
+section,
+.section {
+    padding: 28px 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  footer,
+section,
+.section {
+    padding: 20px 0;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.wrapper-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  margin-top: 80px;
+}
+
+.container {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+.view-sm {
+  max-width: 700px;
+}
+.view-sm.isCenter {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input {
+  padding: 16px 26px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+textarea {
+  padding: 30px 27px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+.card {
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 19px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px rgba(50, 50, 50, 0.2);
+}
+
+.card-img__wrapper {
+  position: relative;
+  height: 230px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.card-img {
+  width: 400px;
+}
+
+.card-name {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+}
+
+.card-body {
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.link {
+  cursor: pointer;
+  color: #8854d0;
+}
+.link:hover {
+  text-decoration: underline;
+  border-bottom: none;
+}
+.link.isWhite {
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
+.link.isFalse {
+  border-bottom: 1px solid #fc5c65;
+  color: #fc5c65;
+}
+.link.isTrue {
+  border-bottom: 1px solid #26de81;
+  color: #26de81;
+}
+.link.isActive, .link.router-link-active, .link.router-link-exact-active {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8em 2em;
+  line-height: 1;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.btn.btnDefault {
+  color: #ffffff;
+  border: 1px solid #333333;
+  background-color: #333333;
+}
+.btn.btnPrimary {
+  color: #ffffff;
+  border: 1px solid #494ce8;
+  background-color: #494ce8;
+}
+.btn.btnDanger {
+  color: #ffffff;
+  border: 1px solid #b54040;
+  background-color: #b53f3f;
+}
+.btn.btnWhite {
+  color: #333333;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  color: #000000;
+  font-weight: 700;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-item {
+  margin-right: 30px;
+  cursor: pointer;
+}
+.navbar-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-link {
+  display: block;
+  transition: all 0.2s ease;
+  color: #aa8ad6;
+}
+.navbar-link.isActive, .navbar-link.router-link-active, .navbar-link.router-link-exact-active {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  line-height: 1.5em;
+  border-collapse: separate;
+  border-spacing: 0 34px;
+}
+table thead th {
+  padding: 20px 22px;
+  white-space: nowrap;
+  font-size: 22px;
+  cursor: pointer;
+}
+table td {
+  padding: 20px;
+}
+table tbody tr {
+  background-color: #ffffff;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.02);
+}
+table tbody tr:hover {
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.04);
+  transform: translate(0, -6px);
+  transition-delay: 0s !important;
+}
+
+.md-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.md-body > :first-child {
+  margin-top: 0 !important;
+}
+
+.md-body > :last-child {
+  margin-bottom: 0 !important;
+}
+
+.md-body blockquote,
+.md-body details,
+.md-body dl,
+.md-body ol,
+.md-body p,
+.md-body pre,
+.md-body ul {
+  margin-top: 0;
+  margin-bottom: 0.8888888889rem;
+}
+
+.md-body a {
+  position: relative;
+  background-color: transparent;
+  text-decoration: underline;
+  transition: 0.2s color;
+  user-select: none;
+  color: #4468e0;
+  cursor: pointer;
+}
+.md-body a:hover {
+  text-decoration: none;
+}
+.md-body a a:not([href]) {
+  color: inherit;
+}
+
+.md-body h1,
+.md-body h2,
+.md-body h3,
+.md-body h4,
+.md-body h5,
+.md-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.md-body h1 {
+  font-size: 1.8em;
+  margin: 0.7em 0;
+}
+
+.md-body h2 {
+  font-size: 1.52em;
+  padding-top: 0.2em;
+  margin: 0.5em 0;
+}
+
+.md-body h3 {
+  font-size: 1.2em;
+  padding-top: 0.4em;
+  margin: 0.4em 0;
+}
+
+.md-body h4 {
+  font-size: 1em;
+  padding-top: 0.3em;
+  margin: 0.3em 0;
+}
+
+.md-body code,
+.md-body kbd,
+.md-body pre {
+  font-family: monospace, monospace;
+}
+
+.md-body ol,
+.md-body ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.md-body ol,
+.md-body ul {
+  padding-left: 1.4em;
+  margin-top: 1.4em;
+  margin-bottom: 2em;
+}
+
+.md-body li + li {
+  margin-top: 0.25em;
+}
+
+.md-body img {
+  max-width: 100%;
+  border-style: none;
+  box-sizing: initial;
+  margin-bottom: 1em;
+}
+
+.md-body img[align=right] {
+  padding-left: 20px;
+}
+
+.md-body img[align=left] {
+  padding-right: 20px;
+}
+
+ul > li:first-child > ul > li {
+  list-style-type: square;
+}
+
+.md-body ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 2.2222222222rem;
+}
+.md-body ul li {
+  position: relative;
+  margin-bottom: 0.91em;
+  list-style-type: disc;
+}
+
+.md-body ol {
+  position: relative;
+  counter-reset: list;
+  list-style: none;
+}
+.md-body ol li {
+  position: relative;
+  padding-left: 2.2222222222rem;
+  margin-bottom: 1.1111111111rem;
+}
+.md-body ol li:before {
+  display: inline-block;
+  position: absolute;
+  left: 1rem;
+  counter-increment: list;
+  content: counter(list) ". ";
+}
+
+body {
+  background: linear-gradient(to bottom, #8c7a7a 0%, #af877c 65%, #af877c 100%) fixed;
+  background: url("https://tocode.ru/static/uploads/courses/3/clash-of-clans-images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.navbar {
+  opacity: 0.7;
+}
+
+.card-img__wrapper {
+  background: url("https://tocode.ru/static/uploads/courses/3/clash-of-clans-images/bg-sm.jpg");
+}
+
+.card {
+  background: #fff;
+  color: #333;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 19px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px #333;
+}
+
+.card {
+  user-select: none;
+}
+
+.card__image {
+  width: 400px;
+  background: url("https://tocode.ru/static/uploads/courses/3/clash-of-clans-images/bg-sm.jpg");
+}
+
+.card-body {
+  min-height: 260px;
+}
+
+.card-stats {
+  display: flex;
+  color: #fff;
+  background-color: #ec9b3b;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.card-stats .one-third {
+  width: 33%;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 15px;
+}
+.card-stats .one-third:last-child {
+  border-right: none;
+}
+.card-stats .stat-value {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.card-stats .stat {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+.card-stats .no-border {
+  border-right: none;
+}
+
+.carousel__prev,
+.carousel__next {
+  background-color: #ec9b3b;
+}
+
+/*# sourceMappingURL=main.css.map */
